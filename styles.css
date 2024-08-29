@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/*============================= Header Section ===================================*/
+header {
+    background: url('images/2.png') no-repeat center center/cover;
+    color: white;
+    padding: 20px 0;
+    height: 600px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other content */
+     background-color:lightsalmon;
+     height: 80px;
+    
+}
+.logo h1 {
+    font-size: 24px;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin-top: 10px;
+    line-height: 80px;
+   
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+ 
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-bar input, .search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
+
+ .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: white; 
+    border-radius: 40px; 
+    padding: 20px;
+    border: 1px solid #ddd; 
+}
+
+.search-bar input, .search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+.search-bar button {
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 18px; /* Smaller font size for mobile */
+        color: #e74c3c;
+    }
+
+    .hero p {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .hero {
+        padding: 20px; /* Adjust padding for mobile view */
+    }
+    
+}
+/*============================== About section ==================================== */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+main {
+    padding: 50px 20px;
+}
+
+.top-apartments {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.top-apartments h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.top-apartments p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.apartments-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.apartment-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 300px;
+}
+
+.apartment-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.apartment-info {
+    padding: 15px;
+}
+
+.apartment-info .price-tag {
+    background-color:crimson;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.apartment-info .price-tag:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+.apartment-info h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* ============================== Review section =============================== */
+.reviews {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .review-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+.client-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+  }
+
+  
+  .review-text p {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .review-text h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .review-text span {
+    color: #666;
+  }
+  .booking-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.booking-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.booking-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-btn:hover {
+    background-color: #0056b3;
+}
+.faq-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.faq-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    background-color:rosybrown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #f9f9f9;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/*====================================  Footer Section ==================================  */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+  }
+  
+  .footer-section h2 {
+    margin-top: 0;
+  }
+  
+  .footer-section p {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-links a {
+    margin: 0 0.5rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 1rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+  }
+
+/* ============================== Responsive Navbar ============================== */
+
+/* For tablets and mobile devices */
+@media (max-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: center; /* Center the logo */
+        padding: 10px;
+        color: #444;
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    }
+
+    .menu {
+        display: none; /* Hide the menu on tablets and mobile */
+    }
+
+    .logo h1 {
+        font-size: 22px; /* Adjust logo size */
+    }
+}
+
+/* For very small devices */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+}
